@@ -1,2 +1,45 @@
-$primary: #ffcb03;
-$secondary: #3467af;
+$primary: #FFCB05;
+$secondary: #3567B0;
+
+
+// Colors types
+$colorBug:  #92BC2C);
+$colorDark: #595761;
+$colorDragon: #0C69C8;
+$colorElectric: #EDD53E;
+$colorFairy: #EC8CE5;
+$colorFight: #CE4265;
+$colorFire: #FB9B51;
+$colorFlying: #90A7DA;
+$colorGhost: #516AAC;
+$colorGrass: #5FBC51;
+$colorGround: #DC7545;
+$colorIce: #70CCBD;
+$colorNormal: #9298A4;
+$colorPoison: #A864C7;
+$colorPsychic: #F66F71;
+$colorRock: #C5B489;
+$colorSteel: #52869D;
+$colorWater: #4A90DD;
+
+
+//gradients types
+
+$gradientBug: linear-gradient( #92BC2C, #AFC836 );
+$gradientDark: linear-gradient(#595761, #6E7587);
+$gradientDragon: linear-gradient(#0C69C8, #0180C7);
+$gradientElectric: linear-gradient(#EDD53E, #FBE273);
+$gradientFairy: linear-gradient(#EC8CE5, #F3A7E7);
+$gradientFight: linear-gradient(#CE4265, #E74347);
+$gradientFire: linear-gradient(#FB9B51, #FBAE46);
+$gradientFlying: linear-gradient(#90A7DA, #A6C2F2);
+$gradientGhost: linear-gradient(#516AAC, #7773D4);
+$gradientGrass: linear-gradient(#5FBC51, #5AC178);
+$gradientGround: linear-gradient(#DC7545, #D29463);
+$gradientIce: linear-gradient(#70CCBD, #8CDDD4);
+$gradientNormal: linear-gradient(#9298A4, #A3A49E);
+$gradientPoison: linear-gradient(#A864C7, #C261D4);
+$gradientPsychic: linear-gradient(#F66F71, #FE9F92);
+$gradientRock: linear-gradient(#C5B489, #D7CD90);
+$gradientSteel: linear-gradient(#52869D, #58A6AA);
+$gradientWater: linear-gradient(#4A90DD, #6CBDE4);
