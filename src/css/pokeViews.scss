@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid red;
+  width: 200px;
+  height: 280px;
+  border-radius: 6%;
+  margin: auto;
+  display: table;
+  &__text {
+    text-align: center;
+    // line-height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
