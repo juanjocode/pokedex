@@ -4,7 +4,6 @@
   width: 100vw;
   height: 100vh;
   background-image: url(../img/balls2.png);
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   display: table;
@@ -25,10 +24,8 @@
       .color {
         background-color: white;
         color: $secondary;
-        .MuiTouchRipple-root {
-          border-style: solid;
-          border-color: $primary;
-        }
+        border: 2px solid $primary;
+        border-radius: 10px;
       }
     }
   }
