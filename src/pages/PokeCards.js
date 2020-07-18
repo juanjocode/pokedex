@@ -1,13 +1,14 @@
 import React from 'react';
 import PokeSeeker from '../components/PokeSeeker';
-import PokeAttack from '../components/PokeAttack';
+import PokeSlider from '../components/PokeSlider'
+// import PokeAttack from '../components/PokeAttack';
 
 class PokeCards extends React.Component {
   render() {
     return (
       <div>
         <PokeSeeker />
-        <PokeAttack />
+        <PokeSlider />
       </div>
     )
   }

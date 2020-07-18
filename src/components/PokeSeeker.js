@@ -3,7 +3,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import PokeViews from '../components/PokeViews';
-import PokeSlider from '../components/PokeSlider'
+// import PokeSlider from '../components/PokeSlider'
 
 
 const PokeSeeker = ({slider}) => {
@@ -42,8 +42,7 @@ const PokeSeeker = ({slider}) => {
           )}
         />
       </div> 
-      <PokeViews props={value2} />
-      {/* <PokeSlider slider={slider} /> */}
+      <PokeViews name={value2} />
     </div>
   );
 }

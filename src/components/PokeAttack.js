@@ -37,14 +37,14 @@ const PokeAttack = () => {
         valueLabelDisplay="auto"
         step={1}
         marks
-        min={10}
+        min={1}
         max={194}
         onChange={(event, value) => {
             setValue(value)
           }
         }
       />
-      <PokeSlider prueba={value}/>
+      <PokeSlider valueAttack={value}/>
 
       <div>
         {initialPokeSlider.filter(person => person.id === 5).map(filteredPerson => (

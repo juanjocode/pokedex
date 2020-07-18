@@ -1,0 +1,18 @@
+.pokeSlider {
+  display: flex;
+  .Buttons {
+    display: flex;
+    .Button__one {
+      p {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .Button__two {
+      p {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
