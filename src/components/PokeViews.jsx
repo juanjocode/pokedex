@@ -3,7 +3,7 @@ import '../css/pokeViews.scss'
 import PokeImage from './PokeImage';
 // class PokeViews extends React.Component {
 
-const PokeViews = ({ props }) => {
+const PokeViews = ({ name }) => {
 
   return (
     <div>
@@ -17,8 +17,7 @@ const PokeViews = ({ props }) => {
             <div className="card__gen" style={{ color: "var(--colorGrass" }}>G1</div>
           </div>
 
-          <PokeImage name={props} />
-
+          <PokeImage name={name} />
         </div>
 
       </div>
