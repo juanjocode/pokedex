@@ -5,7 +5,7 @@ import grass from '../img/types/grass.svg';
 
 const API = 'https://jsonplaceholder.typicode.com/users';
 
-var progressValue = "35%"
+var progressValue = "60%"
 var progressValue2 = "55%"
 
 const PokeImage = ({ name }) => {

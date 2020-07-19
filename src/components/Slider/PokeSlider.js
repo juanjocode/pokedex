@@ -1,10 +1,10 @@
 import React from 'react';
-import PokeData from './PokeData';
+import PokeData from '../PokeData';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import Button from '@material-ui/core/Button';
-import PokeFilter from './PokeFilter';
-import '../css/pokeSlider.scss';
+import PokeFilter from '../PokeFilter';
+import './pokeSlider.scss';
 
 
 const API = 'https://jsonplaceholder.typicode.com/users';

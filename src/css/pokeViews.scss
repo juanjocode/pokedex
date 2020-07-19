@@ -1,7 +1,9 @@
-$primary: #FFCB05;
-$secondary: #3567B0;
-$textGeneral: #B1B1B1;
-$white: #FFFFFF;
+@import './variables.scss';
+
+// $primary: #FFCB05;
+// $secondary: #3567B0;
+// $textGeneral: #B1B1B1;
+// $white: #FFFFFF;
 
 @mixin font-small{
   font-size: 11px;

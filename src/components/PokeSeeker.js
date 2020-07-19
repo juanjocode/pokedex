@@ -1,12 +1,16 @@
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, {useContext} from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import PokeViews from '../components/PokeViews';
+import {GlobalState} from '../Providers/GlobalState';
+// import PokeViews from '../components/PokeViews';
 // import PokeSlider from '../components/PokeSlider'
 
 
 const PokeSeeker = ({slider}) => {
+
+  const state = useContext(GlobalState);
+  console.log(state);
 
   const [value, setValue] = React.useState([])
   const [value2, setValue2] = React.useState("")
@@ -42,7 +46,7 @@ const PokeSeeker = ({slider}) => {
           )}
         />
       </div> 
-      <PokeViews name={value2} />
+      {/* <PokeViews name={value2} /> */}
     </div>
   );
 }

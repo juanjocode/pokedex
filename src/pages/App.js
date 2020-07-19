@@ -1,11 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import Menu from '../components/Menu';
 import Usuarios from '../components/Usuarios';
-import HomeImage from '../components/HomeImage';
 import PokeCards from '../pages/PokeCards';
-// import PokeImage from '../components/PokeImage';
-// import Home from '../components/'
+import Home from '../pages/Home';
+
 
 const Tareas = () => <div>
   Tareas
@@ -13,15 +11,11 @@ const Tareas = () => <div>
 
 const App = () => (
   <BrowserRouter>
-    {/* <Menu />
-    <Route exact path='/' component={ Usuarios } />
-    <Route exact path='/tareas' component={ Tareas } /> */}
     <Switch>
       <Route exact path='/index/cards' component={ PokeCards } />
-      <Route exact path='/index' component={ HomeImage } />
+      <Route exact path='/index' component={ Home } />
       <Route exact path='/' component={ Usuarios } />
       <Route exact path='/tareas' component={ Tareas } />
-      {/* <Route exact path='/index/image' component={ PokeImage } /> */}
     </Switch>
 
   </BrowserRouter>
