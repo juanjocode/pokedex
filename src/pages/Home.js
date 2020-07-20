@@ -1,8 +1,9 @@
 import React from 'react';
 import '../css/homeImagen.scss'
 import Button from '@material-ui/core/Button';
-import Lookema from '../img/Lookema.png';
-import Binoculares from '../img/binoculares.png';
+import Lookema from '../img/lookemall.svg';
+import Binoculares from '../img/icon-binoculars.svg';
+import PokeButton from '../components/Button/Button';
 
 class Home extends React.Component {
 
@@ -11,12 +12,15 @@ class Home extends React.Component {
       <div className="Lookema">
         <div className="center">
           <div className="Lookema__content">
-            <img src={ Lookema } alt="Lookema" />
+            <img src={Lookema} alt="Lookema" />
           </div>
           <div className="Lookema__button">
-            <Button variant="contained" className="color" href="/" startIcon={Binoculares}>
-                I gotta look'em all
-            </Button>
+            <PokeButton
+              icon={Binoculares}
+              title="I gotta look'em all"
+              link="/index/cards"
+              className="button-active"
+            />
           </div>
         </div>
       </div>
