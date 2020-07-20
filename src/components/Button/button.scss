@@ -1,14 +1,12 @@
 .poke-button{
     @include Row;
+    @include fontNormal;
     width: auto;
     height: 40px;
     padding: 15px;
     background-color: var(--colorWhite);
     border-color: transparent;
     border-radius: 10px;
-    color: var(--textGeneral);
-    font-size: 15px;
-    font-weight: 400;
     box-shadow: 0px 0px 3px rgba(0, 12, 78, 0.288);
     outline: none;
     filter: saturate(0);
@@ -18,7 +16,7 @@
         cursor: pointer;
         color: var(--secondary);
         filter: saturate(1);
-        border: 2px solid var(--primary);
+        border: $borderGeneral;
         box-shadow: 1px 1px 10px rgba(0, 12, 78, 0.466);
     }
     &:active{
