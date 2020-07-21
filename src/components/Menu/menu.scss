@@ -1,6 +1,9 @@
 .menu{
     // height: 100%;
     &.extended{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 280px;
         border: $borderGeneral;
         height: calc(100vh - 60px);
