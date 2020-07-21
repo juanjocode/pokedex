@@ -12,12 +12,12 @@ const Tareas = () => <div>
 
 const App = () => (
   <BrowserRouter>
-    <Switch>
+    {/* <Switch> */}
       <Route exact path='/index/cards' component={ PokeCards } />
       <Route exact path='/' component={ Home } />
       {/* <Route exact path='/' component={ Usuarios } /> */}
       <Route exact path='/tareas' component={ Tareas } />
-    </Switch>
+    {/* </Switch> */}
 
   </BrowserRouter>
 );

@@ -1,5 +1,5 @@
 var images = {
-    bug: '../img/types/bug.svg',
+    bug: 'types/bug.svg',
     dark: './dark.svg',
     dragon: './dragon.svg',
     electric: './electric.svg',

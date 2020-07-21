@@ -30,8 +30,8 @@ const PokeSeeker = ({slider}) => {
   }
 
   return (
-    <div>
-      <div style={{ width: 300 }}>
+    <>
+      
         <Autocomplete
           id="free-solo-demo"
           freeSolo
@@ -45,9 +45,8 @@ const PokeSeeker = ({slider}) => {
             <TextField {...params} label="pokemon" margin="normal" variant="outlined" />
           )}
         />
-      </div> 
-      {/* <PokeViews name={value2} /> */}
-    </div>
+
+    </>
   );
 }
 

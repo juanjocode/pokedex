@@ -6,8 +6,6 @@ import PokeImage from './PokeImage';
 const PokeViews = ({ name }) => {
 
   return (
-    <div>
-
       <div className="card" >
 
         <div className="card__image-container" style={{ background: "var(--gradientGrass)" }}>
@@ -21,8 +19,6 @@ const PokeViews = ({ name }) => {
         </div>
 
       </div>
-
-    </div>
   )
 }
 
