@@ -23,8 +23,16 @@
     font-weight: 400;
 }
 
+@mixin fontTitle {
+    color: $secondary;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
 
 @import '../components/Button/button.scss';
+@import '../components/Navbar/navbar.scss';
 
 *{
     margin: 0;
