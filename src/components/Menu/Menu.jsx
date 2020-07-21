@@ -2,6 +2,9 @@ import React from 'react';
 import PokeSeeker from '../PokeSeeker';
 import Pokeslider from '../Slider/PokeSlider';
 import PokeButton from '../Button/Button'
+
+
+
 import iconStrong from '../../img/icon-strongest.svg'
 import iconWeakness from '../../img/icon-weakness.svg'
 import iconLegendary from '../../img/icon-legendary.svg'
@@ -20,24 +23,31 @@ const Menu = () => {
       <div className="menu collapse">
         <div className="menu__content">
           <PokeSeeker />
-          <PokeButton
-            icon={iconStrong}
-            title="Stronguest"
-            style={{ width: "100%" }}
-          />
+
+            <PokeButton
+              icon={iconStrong}
+              title="Stronguest"
+              style={{ width: "100%" }}
+              tooltip="Stronguest"
+            />
+      
+
           <PokeButton
             icon={iconWeakness}
             title="Weakness"
+            tooltip="Weakness"
             style={{ width: "100%" }}
           />
           <PokeButton
             icon={iconLegendary}
             title="Legendaries"
+            tooltip="Legendaries"
             style={{ width: "100%" }}
           />
           <PokeButton
             icon={iconReset}
             title="Reset / All"
+            tooltip="Reset / All"
             style={{ width: "100%" }}
           />
           {/* <Pokeslider /> */}
@@ -46,6 +56,7 @@ const Menu = () => {
         <PokeButton
           icon={iconCollapse}
           title="Collapse"
+          tooltip="Collapse"
           className="button-collapse"
           classNameContainer="button-collapse__container"
           onClick={collapseMenu}
