@@ -9,53 +9,51 @@ import iconReset from '../../img/icon-reset.svg'
 import iconCollapse from '../../img/icon-collapse.svg'
 
 const Menu = () => {
+  const collapseMenu = () => {
+    var menuToggle = document.querySelector('.menu');
+    menuToggle.classList.toggle("collapse")
+  };
   return (
 
+
     <>
-      <div className="menu extended">
+      <div className="menu collapse">
+        <div className="menu__content">
+          <PokeSeeker />
+          <PokeButton
+            icon={iconStrong}
+            title="Stronguest"
+            style={{ width: "100%" }}
+          />
+          <PokeButton
+            icon={iconWeakness}
+            title="Weakness"
+            style={{ width: "100%" }}
+          />
+          <PokeButton
+            icon={iconLegendary}
+            title="Legendaries"
+            style={{ width: "100%" }}
+          />
+          <PokeButton
+            icon={iconReset}
+            title="Reset / All"
+            style={{ width: "100%" }}
+          />
+          {/* <Pokeslider /> */}
+        </div>
 
-
-        <PokeSeeker />
-        <PokeButton
-          icon={iconStrong}
-          title="Stronguest"
-          link="/index/cards"
-          style={{width:"100%"}}
-          className=""
-        />
-        <PokeButton
-          icon={iconWeakness}
-          title="Weakness"
-          link="/index/cards"
-           style={{width:"100%"}}
-          className=""
-        />
-        <PokeButton
-          icon={iconLegendary}
-          title="Legendaries"
-          link="/index/cards"
-           style={{width:"100%"}}
-          className=""
-        />
-        <PokeButton
-          icon={iconReset}
-          title="Reset / All"
-          link="/index/cards"
-           style={{width:"100%"}}
-          className=""
-        />
-        <Pokeslider />
-        
         <PokeButton
           icon={iconCollapse}
-          title="Reset / All"
-          link="/index/cards"
-          className=""
+          title="Collapse"
+          className="button-collapse"
+          classNameContainer="button-collapse__container"
+          onClick={collapseMenu}
         />
-
-
-
       </div>
+
+
+
     </>
 
   );

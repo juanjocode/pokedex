@@ -1,14 +1,56 @@
-.menu{
-    // height: 100%;
-    &.extended{
+.menu {
+    position: relative;
+
+    border: $borderGeneral;
+    height: calc(100vh - 60px);
+    box-shadow: 0px 10px 10px rgba(0, 12, 78, 0.288);
+    width: 280px;
+    padding: 10px;
+    transition: all 0.3s;
+    & .menu__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 280px;
-        border: $borderGeneral;
-        height: calc(100vh - 60px);
-        box-shadow: 0px 10px 10px rgba(0, 12, 78, 0.288);
-        padding: 10px;
-        
+        height: calc(100% - 70px)
+    }
+    & .button-collapse__container {
+        position: absolute;
+        bottom: 10px;
+    }
+    & .button-collapse {
+        bottom: 10px;
+        left: 0;
+        background-color: transparent;
+        box-shadow: initial;
+        width: 263px;
+        justify-content: flex-start;
+        & img {
+            transform: rotate(180deg);
+            transition: all 0.3s;
+        }
+    }
+    & .button-collapse:hover {
+        border-color: transparent;
+    }
+    &.collapse {
+        width: 60px;
+        padding: 10px 0;
+        & .poke-button {
+            box-shadow: initial;
+            border-radius: initial;
+            width: 57px;
+            justify-content: center;
+
+            &:hover {
+                border: 2px solid transparent;
+            }
+            & img {
+                margin-right: 0;
+                transform: initial;
+            }
+            & p {
+                display: none;
+            }
+        }
     }
 }
