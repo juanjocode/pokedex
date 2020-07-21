@@ -2,52 +2,45 @@
 import React, {useContext} from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import {GlobalState} from '../Providers/GlobalState';
+// import {GlobalState} from '../Providers/GlobalState';
 // import PokeViews from '../components/PokeViews';
 // import PokeSlider from '../components/PokeSlider'
+class PokeSeeker extends React.Component {
 
+  constructor(props) {
+    super(props);
 
-const PokeSeeker = ({slider}) => {
+    
 
-  const state = useContext(GlobalState);
-  console.log(state);
-
-  const [value, setValue] = React.useState([])
-  const [value2, setValue2] = React.useState("")
-
-  React.useEffect(() => {
-    obtenerDatos()
-  }, [])
-
-  const obtenerDatos = async () => {
-    try {
-      const data = await fetch('https://jsonplaceholder.typicode.com/users')
-      const users = await data.json()
-      setValue(users)
-    } catch (error) {
-      alert ("Este es el error", error);
+    this.state = {
+      pokemon: []
     }
   }
 
-  return (
-    <>
-      
-        <Autocomplete
-          id="free-solo-demo"
-          freeSolo
-          disableClearable
-          onChange={(event, value) => {
-              setValue2(value)
-            }
-          }
-          options={value.map((option) => option.name)}
-          renderInput={(params) => (
-            <TextField {...params} label="pokemon" margin="normal" variant="outlined" />
-          )}
-        />
+  componentDidMount () {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(initialData => this.setState({ pokemon: initialData }))
+  }
 
-    </>
-  );
+  render () {
+    return (
+      <>
+            <Autocomplete
+            id="free-solo-demo"
+            freeSolo
+            disableClearable
+            onChange={this.props.onChange}
+            options={this.state.pokemon.map((option) => option.name)}
+ 
+            renderInput={(params) => (
+              <TextField {...params} label="pokemon" margin="normal" variant="outlined" />
+            )}
+          />
+          
+      </>
+    )
+  }
 }
 
 export default PokeSeeker; 

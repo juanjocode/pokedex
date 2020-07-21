@@ -11,7 +11,7 @@ import iconLegendary from '../../img/icon-legendary.svg'
 import iconReset from '../../img/icon-reset.svg'
 import iconCollapse from '../../img/icon-collapse.svg'
 
-const Menu = () => {
+const Menu = (props) => {
   const collapseMenu = () => {
     var menuToggle = document.querySelector('.menu');
     menuToggle.classList.toggle("collapse")
@@ -22,8 +22,7 @@ const Menu = () => {
     <>
       <div className="menu collapse">
         <div className="menu__content">
-          <PokeSeeker />
-
+          <PokeSeeker onChange={props.onChange}/>
             <PokeButton
               icon={iconStrong}
               title="Stronguest"
