@@ -9,6 +9,8 @@ import CardMain from '../components/CardMain/CardMain';
 // import Menu from '../../src/components/Menu/Menu';
 // import PokeAttack from '../components/PokeAttack';
 
+
+
 class PokeCards extends React.Component {
 
   state = { form: "" };
@@ -21,19 +23,45 @@ class PokeCards extends React.Component {
       }
     })
   };
-  
+
   render() {
     return (
-      <div>
+      <div className="poke-cards">
         <Navbar />
-        <Menu onChange={this.handleChange} />
-        <CardMain send={this.state.form.valor}/>
-        
-        <div style={{ background: "black", padding:"20px" }}>
+        <div className="content">
+          <Menu onChange={this.handleChange} />
+          <div className="cards__container">
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+            <CardMain send={this.state.form.valor} />
+          </div>
+        </div>
+        {/* <div style={{ background: "black", padding: "20px" }}>
           <img src={images.bug} />
           <img src={bug} />
-        </div>
-        
+        </div> */}
+
         {/* <cardView /> */}
         {/* <PokeSeeker /> */}
         {/* <PokeSlider /> */}
