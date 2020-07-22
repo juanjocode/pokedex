@@ -5,6 +5,7 @@ import PokeButton from '../Button/Button'
 
 
 
+
 import iconStrong from '../../img/icon-strongest.svg'
 import iconWeakness from '../../img/icon-weakness.svg'
 import iconLegendary from '../../img/icon-legendary.svg'
@@ -29,8 +30,7 @@ const Menu = (props) => {
               style={{ width: "100%" }}
               tooltip="Stronguest"
             />
-      
-
+    
           <PokeButton
             icon={iconWeakness}
             title="Weakness"
@@ -40,7 +40,7 @@ const Menu = (props) => {
           <PokeButton
             icon={iconLegendary}
             title="Legendaries"
-            tooltip="Legendaries"
+        
             style={{ width: "100%" }}
           />
           <PokeButton
