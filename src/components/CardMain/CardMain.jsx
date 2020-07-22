@@ -2,7 +2,6 @@ import React from 'react'
 import PokeData from '../PokeData';
 import poison from '../../img/types/poison.svg';
 import grass from '../../img/types/grass.svg';
-import './cardMain.scss';
 
 
 const API = 'https://jsonplaceholder.typicode.com/users';
@@ -12,6 +11,8 @@ var progressValue2 = "55%"
 
 const CardMain = (props) => {
 
+  // const { numero generacion urlImage tipo }
+
   const initialPokeData = PokeData(API);
 
   return (
@@ -19,7 +20,13 @@ const CardMain = (props) => {
     <div className="card">
     
       <div className="card__image-container" style={{ background: "var(--gradientGrass)" }}>
+
         <div className="card__number-gen">
+          <div className="card__number" style={{ color: "var(--colorGrass" }}>#001</div>
+          <div className="card__gen" style={{ color: "var(--colorGrass" }}>G1</div>
+        </div>
+
+
           <div className="poke-image">
             <div className="image__size">
 
@@ -31,10 +38,10 @@ const CardMain = (props) => {
               
             </div>
             
-            <h2 style={{ color: "var(--colorGrass" }} >  {props.onChange}</h2>
+            <h2 style={{ color: "var(--colorGrass" }} >  {props.send}</h2>
 
             <div className="card__type">
-
+                
 
               <div className="card__type1" >
                 <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
@@ -42,13 +49,13 @@ const CardMain = (props) => {
                 </div>
                 <span>Grass</span>
               </div>
-
+{/* 
               <div className="card__type2" >
                 <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
                   <img src={poison} alt="type" />
                 </div>
                 <span>Poison</span>
-              </div>
+              </div> */}
 
             </div>
             <div className="card__abilities">
@@ -76,7 +83,7 @@ const CardMain = (props) => {
             </div>
 
           </div>
-        </div>
+        
       </div>
     </div>
  
