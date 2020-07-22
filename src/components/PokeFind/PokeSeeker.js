@@ -34,7 +34,7 @@ class PokeSeeker extends React.Component {
             options={this.state.pokemon.map((option) => option.name)}
  
             renderInput={(params) => (
-              <TextField {...params} label="pokemon" margin="normal" variant="outlined" />
+              <TextField {...params} label="pokemon" margin="normal"  />
             )}
           />
           
