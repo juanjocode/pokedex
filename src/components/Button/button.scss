@@ -1,5 +1,6 @@
 .poke-button{
     @include Row;
+    justify-content: flex-start;
     @include fontNormal;
     width: auto;
     height: 40px;
