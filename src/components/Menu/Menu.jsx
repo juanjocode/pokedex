@@ -1,6 +1,6 @@
 import React from 'react';
 import PokeSeeker from '../PokeFind/PokeSeeker';
-import Pokeslider from '../Slider/PokeSlider';
+import PokeSlider from '../Slider/PokeSlider';
 import PokeButton from '../Button/Button'
 
 
@@ -49,7 +49,7 @@ const Menu = (props) => {
             tooltip="Reset / All"
             style={{ width: "100%" }}
           />
-          <Pokeslider />
+          <PokeSlider handleData={props.handleData}/>
         </div>
 
         <PokeButton

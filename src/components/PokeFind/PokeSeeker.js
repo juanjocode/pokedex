@@ -18,7 +18,8 @@ class PokeSeeker extends React.Component {
   }
 
   componentDidMount () {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('http://localhost:3000/pokemon')
       .then(response => response.json())
       .then(initialData => this.setState({ pokemon: initialData }))
   }
@@ -31,7 +32,7 @@ class PokeSeeker extends React.Component {
             freeSolo
             disableClearable
             onChange={this.props.onChange}
-            options={this.state.pokemon.map((option) => option.name)}
+            options={this.state.pokemon.map((option) => option.name_pokemon)}
  
             renderInput={(params) => (
               <TextField {...params} label="pokemon" margin="normal"  />
