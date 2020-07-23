@@ -1,0 +1,82 @@
+.MuiInput-underline:after {
+    border-bottom: initial !important;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: initial !important;
+}
+.MuiInput-underline:hover:not(.Mui-disabled):after {
+    border-bottom: initial !important;
+}
+
+.MuiInput-underline:before {
+    border-bottom: initial !important;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
+    display: none;
+}
+
+.MuiInputBase-input.MuiInput-input.MuiInput-underline.MuiAutocomplete-inputRoot.MuiInputBase-fullWidth.MuiInput-fullWidth.Mui-focused.Mui-focused.MuiInputBase-formControl.MuiInputBase-formControl.MuiInputBase-inputAdornedEnd {
+    border: $borderGeneral !important;
+    box-shadow: 1px 1px 10px rgba(0, 12, 78, 0.466) !important;
+}
+
+.MuiInputBase-input.MuiInput-input.MuiAutocomplete-input.MuiAutocomplete-inputFocused.MuiInputBase-inputAdornedEnd {
+    @include fontNormal;
+    width: auto;
+    height: 10px !important;
+    padding: 13px;
+    padding-left: 45px;
+    background-color: var(--colorWhite);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 12, 78, 0.288);
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+ 
+    &:hover {
+        border: $borderGeneral;
+        box-shadow: 1px 1px 10px rgba(0, 12, 78, 0.466);
+    }
+    &:active {
+        box-shadow: 0px 0px 3px rgba(0, 12, 78, 0.288);
+        border: $borderGeneral;
+        box-shadow: 1px 1px 10px rgba(0, 12, 78, 0.466);
+    }
+}
+
+.pokefinder {
+    position: relative;
+    filter: saturate(0);
+    transition: all 0.3s;
+    & button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+    &:hover {
+        cursor: pointer;
+        color: var(--secondary);
+        filter: saturate(1);
+    }
+}
+
+.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginNormal.MuiFormControl-fullWidth {
+    margin: initial !important;
+}
+
+.MuiInputBase-input.MuiInput-input.MuiAutocomplete-input.MuiAutocomplete-inputFocused.MuiInputBase-inputAdornedEnd:focus-within {
+    border: $borderGeneral;
+    box-shadow: 1px 1px 5px rgba(0, 12, 78, 0.466);
+}
+
+.pokefinder:focus-within {
+    filter: saturate(1);
+}
