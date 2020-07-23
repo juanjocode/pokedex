@@ -32,9 +32,9 @@ const Menu = (props) => {
 
           <PokeButton
             icon={iconStrong}
-            title="Stronguest"
+            title="Strongest"
             style={{ width: "100%" }}
-            tooltip="Stronguest"
+            tooltip="Strongest"
           />
 
           <PokeButton
