@@ -17,20 +17,26 @@ const Menu = (props) => {
     var menuToggle = document.querySelector('.menu');
     menuToggle.classList.toggle("collapse")
   };
+  const expandMenu = () => {
+    var menuToggle = document.querySelector('.menu');
+    menuToggle.classList.remove("collapse")
+  };
   return (
 
 
     <>
       <div className="menu collapse">
         <div className="menu__content">
-          <PokeSeeker onChange={props.onChange}/>
-            <PokeButton
-              icon={iconStrong}
-              title="Stronguest"
-              style={{ width: "100%" }}
-              tooltip="Stronguest"
-            />
-    
+
+          <PokeSeeker onChange={props.onChange} handleClick={expandMenu} tooltip="Search pokémon" />
+
+          <PokeButton
+            icon={iconStrong}
+            title="Stronguest"
+            style={{ width: "100%" }}
+            tooltip="Stronguest"
+          />
+
           <PokeButton
             icon={iconWeakness}
             title="Weakness"
@@ -40,7 +46,7 @@ const Menu = (props) => {
           <PokeButton
             icon={iconLegendary}
             title="Legendaries"
-        
+            tooltip="Legendaries"
             style={{ width: "100%" }}
           />
           <PokeButton
@@ -49,7 +55,7 @@ const Menu = (props) => {
             tooltip="Reset / All"
             style={{ width: "100%" }}
           />
-          <PokeSlider handleData={props.handleData}/>
+          <PokeSlider handleData={props.handleData} />
         </div>
 
         <PokeButton
