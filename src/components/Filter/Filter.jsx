@@ -36,17 +36,6 @@ export default function PokeFilter() {
                     <AccordionDetails>
                         <div className="pokefilter__content">
                             <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
-                            <p>   acá va el contenido de esta joda</p>
                         </div>
                     </AccordionDetails>
                 </Accordion>
