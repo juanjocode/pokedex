@@ -81,6 +81,16 @@
             }
         }
         & .pokefilter{
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // background-color: transparent !important;
+            height: 46px;
+            width: 56px;
+            overflow: hidden;
+            & .pokefilter__content{
+                display: none;
+            }
          
             & .MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded{
                 box-shadow: initial !important;

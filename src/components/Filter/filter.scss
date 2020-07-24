@@ -53,10 +53,14 @@
     margin: initial !important;
 }
  
+.pokefilter{
+   width: 100%;
+}
 .pokefilter button{
     border: none;
     background-color: transparent;
     outline: none;
+    width: 100%;
 }
 .pokefilter button:hover{
    cursor: pointer;
