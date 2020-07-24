@@ -3,7 +3,8 @@
     border: $borderGeneral;
     height: calc(100vh - 60px);
     box-shadow: 0px 10px 10px rgba(0, 12, 78, 0.288);
-    min-width: 480px;
+    min-width: 280px;
+    max-width: 280px;
     padding: 10px;
     transition: all 0.3s;
     & .menu__content {
@@ -57,7 +58,6 @@
         }
         & .pokefinder img {
             margin-left: 5px;
-            // width: 0;
         }
 
         & .poke-button {
@@ -79,6 +79,22 @@
             & p {
                 display: none;
             }
+        }
+        & .pokefilter{
+         
+            & .MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded{
+                box-shadow: initial !important;
+                border: 2px solid transparent;
+                filter: saturate(0);
+                transition: all .3s;
+                cursor: pointer;
+                & .MuiButtonBase-root.MuiAccordionSummary-root p, 
+                & .MuiButtonBase-root.MuiIconButton-root.MuiAccordionSummary-expandIcon.MuiIconButton-edgeEnd{
+                    display: none;
+                }
+        
+            }
+
         }
     }
 }

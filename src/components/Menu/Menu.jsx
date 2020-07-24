@@ -1,7 +1,8 @@
 import React from 'react';
 import PokeSeeker from '../PokeFind/PokeSeeker';
 import PokeSlider from '../Slider/PokeSlider';
-import PokeButton from '../Button/Button'
+import PokeButton from '../Button/Button';
+import PokeFilter from '../Filter/Filter';
 
 
 
@@ -29,6 +30,8 @@ const Menu = (props) => {
         <div className="menu__content">
 
           <PokeSeeker onChange={props.onChange} handleClick={expandMenu} tooltip="Search pokémon" />
+
+          <PokeFilter />
 
           <PokeButton
             icon={iconStrong}
