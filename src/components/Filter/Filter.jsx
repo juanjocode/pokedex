@@ -1,28 +1,45 @@
-import React, { Component } from 'react';
-import Tooltip from '@material-ui/core/Tooltip';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import FilterImg from '../../img/icon-filter.svg';
 
-export default class PokeFilter extends Component {
 
-    render() {
-        const { icon, title, link, className, classNameContainer, style, onClick, tooltip } = this.props;
 
-        return (
-            <Accordion>
-                <a href={link} className={`${classNameContainer} button-tooltip`}>
-                    <button style={style} className={`poke-button ${className}`} onClick={onClick}>
-                        <Tooltip title={tooltip}  >
-                            <img src={icon} alt={icon} />
-                        </Tooltip>
-                        <p>{title}</p>
-                    </button>
-                </a>
+
+export default function PokeFilter() {
+
+    const [expanded, setExpanded] = React.useState(false);
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+    };
+    const expandMenu = () => {
+        var menuToggle = document.querySelector('.menu');
+        menuToggle.classList.remove("collapse")
+    };
+
+    return (
+        <div className="pokefilter">
+            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1bh-content"
+                    id="panel1bh-header"
+                >
+                    <button onClick={expandMenu}>    <img src={FilterImg} alt="filter" /> </button>
+                    <Typography className="acordion__title">Filter</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <div>
+                    acá va el contenido de esta joda
+                     </div>
+                </AccordionDetails>
             </Accordion>
-        );
-    }
+
+        </div>
+    );
+
 }
-
-
-
-

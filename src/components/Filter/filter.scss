@@ -1,0 +1,63 @@
+
+.MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded{
+    box-shadow: 0px 0px 3px rgba(0, 12, 78, 0.288) !important;
+    border-radius: 10px !important;
+    border: 2px solid transparent;
+    border-radius: 10px !important;
+    filter: saturate(0) !important;
+    transition: all .3s;
+}
+.MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded:hover{
+    cursor: pointer;
+
+    filter: saturate(1) !important;
+    border: $borderGeneral;
+    box-shadow: 1px 1px 10px rgba(0, 12, 78, 0.466);
+}
+
+.MuiPaper-root.MuiAccordion-root.Mui-expanded.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded{
+    filter: saturate(1) !important;
+    border: $borderGeneral;
+    box-shadow: 1px 1px 10px rgba(0, 12, 78, 0.466) !important;
+    color: var(--textGeneral);
+}
+.MuiPaper-root.MuiAccordion-root.Mui-expanded.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded .MuiTypography-root.acordion__title.MuiTypography-body1{
+
+    color: var(--secondary);
+}
+
+.MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded::before{
+   height: 0;
+}
+
+.MuiButtonBase-root.MuiAccordionSummary-root{
+
+}
+.MuiSvgIcon-root{
+    fill: var(--secondary) !important;
+    color: var(--secondary);
+}
+
+.acordion__title{
+    @include fontNormal;
+    margin-left: 10px !important;
+
+}
+
+.MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded:hover .acordion__title{
+    color: var(--secondary);
+    
+}
+
+.MuiAccordionSummary-content{
+    margin: initial !important;
+}
+ 
+.pokefilter button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.pokefilter button:hover{
+   cursor: pointer;
+}
