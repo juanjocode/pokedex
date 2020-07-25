@@ -4,9 +4,6 @@ import PokeSlider from '../Slider/PokeSlider';
 import PokeButton from '../Button/Button';
 import PokeFilter from '../Filter/Filter';
 
-
-
-
 import iconStrong from '../../img/icon-strongest.svg'
 import iconWeakness from '../../img/icon-weakness.svg'
 import iconLegendary from '../../img/icon-legendary.svg'
@@ -14,6 +11,7 @@ import iconReset from '../../img/icon-reset.svg'
 import iconCollapse from '../../img/icon-collapse.svg'
 
 const Menu = (props) => {
+  
   const collapseMenu = () => {
     var menuToggle = document.querySelector('.menu');
     menuToggle.classList.toggle("collapse")

@@ -65,3 +65,11 @@
 .pokefilter button:hover{
    cursor: pointer;
 }
+
+.pokefilter__checks-continer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 17px;
+    
+}
