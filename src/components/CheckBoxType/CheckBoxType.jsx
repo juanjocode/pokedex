@@ -30,8 +30,8 @@ export default class Pokecheck extends Component {
     return (
 
       <MyTooltip title={tooltipCheck}>
-        <div className="checkbox-type" id={id}>
-          <input type="checkbox" className="checkbox-type__input" onClick={handleClick} />
+        <div className="checkbox-type">
+          <input type="checkbox" id={id} className="checkbox-type__input" onClick={handleClick} />
           <div className="checkbox-type__cont" style={{ background: ` ${colorType}` }}> </div>
           <img src={icon} alt="type" />
         </div>

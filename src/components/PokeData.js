@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const PokeData = (API) => {
   const [ pokemon, setPokemon ] = useState([]);
@@ -11,3 +11,6 @@ const PokeData = (API) => {
 };
 
 export default PokeData;
+
+
+

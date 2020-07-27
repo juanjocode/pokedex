@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import Menu from '../components/Menu/Menu';
+import AlternativeMenu from '../components/AlternativeMenu/AlternativeMenu';
+// import Menu from '../components/Menu/Menu';
 // import images from '../img/images';
 // import bug from '../img/types/bug.svg';
 import CardMain from '../components/CardMain/CardMain';
@@ -8,11 +9,12 @@ import FilterAttack from '../components/FilterAttack/FilterAttack';
 import { connect } from 'react-redux';
 import FilterDefense from '../components/FilterDefense/FilterDefense';
 import FilterProbLegend from '../components/FilterProbLegend/FilterProbLegend';
+import FilterWeakness from '../components/FilterWeakness/FilterWeakness';
 // import { Provider } from 'react-redux';
 // import store from '../Store/store';
 // import { createStore } from 'redux';
 
-class PokeCards extends React.Component {
+class PageWeakness extends React.Component {
 
   constructor(props) {
     super(props);
@@ -75,7 +77,7 @@ class PokeCards extends React.Component {
       <div className="poke-cards">
         <Navbar />
         <div className="content">
-          <Menu onChange={this.handleChange} handleStrong={this.handleStrong} handleData={this.handleData} handleChangeDefense={this.handleChangeDefense} handleReset={this.handleReset} handleChangeProb={this.handleChangeProb}/>
+          <AlternativeMenu onChange={this.handleChange} handleStrong={this.handleStrong} handleData={this.handleData} handleChangeDefense={this.handleChangeDefense} handleReset={this.handleReset} handleChangeProb={this.handleChangeProb}/>
           <div className="cards__container">
 
           {this.state.valor3 === 1 ? window.location.reload() : null}
@@ -85,12 +87,15 @@ class PokeCards extends React.Component {
             <FilterAttack handleData={this.state.valor5} handleData2={this.state.valor2}/>
             <FilterDefense handleChangeDefense={this.state.valorDefense} handleChangeDefense2={this.state.valorDefense2}/>
             <FilterProbLegend  handleChangeProb={this.state.valor4}/>
+            {/* <FilterStrong/> */}
+            <FilterWeakness/>
+
           </div> 
         </div>
         {console.log(this.state.valorStrong)} 
         {/* {console.log(this.state.valor5)}  */}
 
-        {console.log(this.state.change1.valor1)} 
+        {/* {console.log(this.state.setValue)}  */}
 
         {/* <div style={{ background: "black", padding: "20px" }}>
           <img src={images.bug} />
@@ -108,4 +113,4 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({})
 
-export default connect(mapStateToProps, mapDispatchToProps) (PokeCards);
+export default connect(mapStateToProps, mapDispatchToProps) (PageWeakness);

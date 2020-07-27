@@ -5,6 +5,7 @@ import SliderDefense from '../SliderDefense/SliderDefense';
 import PokeButton from '../Button/Button';
 import PokeFilter from '../Filter/Filter';
 
+
 import iconStrong from '../../img/icon-strongest.svg'
 import iconWeakness from '../../img/icon-weakness.svg'
 import iconLegendary from '../../img/icon-legendary.svg'
@@ -13,8 +14,7 @@ import iconCollapse from '../../img/icon-collapse.svg'
 import SliderProbabilidadLegendario from '../SliderProbabilidadLegendario/SliderProbabilidadLegendario';
 
 
-const Menu = (props) => {
-  
+const AlternativeMenu = (props) => {
   const collapseMenu = () => {
     var menuToggle = document.querySelector('.menu');
     menuToggle.classList.toggle("collapse")
@@ -28,7 +28,7 @@ const Menu = (props) => {
 
 
     <>
-      <div className="menu collapse">
+      <div className="menu">
         <div className="menu__content">
 
           <PokeSeeker onChange={props.onChange} handleClick={expandMenu} tooltip="Search pokémon" />
@@ -89,4 +89,4 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+export default AlternativeMenu;
