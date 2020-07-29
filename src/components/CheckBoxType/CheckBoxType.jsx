@@ -24,7 +24,7 @@ export default class Pokecheck extends Component {
 
   render() {
 
-    const { id, handleClick, colorType, icon, tooltipCheck } = this.props;
+    const { id, handleClick, colorType, icon, idImg, tooltipCheck } = this.props;
 
 
     return (
@@ -32,7 +32,7 @@ export default class Pokecheck extends Component {
       <MyTooltip title={tooltipCheck}>
         <div className="checkbox-type">
           <input type="checkbox" id={id} className="checkbox-type__input" onClick={handleClick} />
-          <div className="checkbox-type__cont" style={{ background: ` ${colorType}` }}> </div>
+          <div id={idImg} className="checkbox-type__cont" style={{ background: ` ${colorType}` }}> </div>
           <img src={icon} alt="type" />
         </div>
       </MyTooltip>

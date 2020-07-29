@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import AlternativeMenu from '../components/AlternativeMenu/AlternativeMenu';
-// import Menu from '../components/Menu/Menu';
+// import AlternativeMenu from '../components/AlternativeMenu/AlternativeMenu';
+import Menu from '../components/Menu/Menu';
 // import images from '../img/images';
 // import bug from '../img/types/bug.svg';
 import CardMain from '../components/CardMain/CardMain';
@@ -77,7 +77,7 @@ class PageStrong extends React.Component {
       <div className="poke-cards">
         <Navbar />
         <div className="content">
-          <AlternativeMenu onChange={this.handleChange} handleStrong={this.handleStrong} handleData={this.handleData} handleChangeDefense={this.handleChangeDefense} handleReset={this.handleReset} handleChangeProb={this.handleChangeProb}/>
+          <Menu onChange={this.handleChange} handleStrong={this.handleStrong} handleData={this.handleData} handleChangeDefense={this.handleChangeDefense} handleReset={this.handleReset} handleChangeProb={this.handleChangeProb}/>
           <div className="cards__container">
 
           {this.state.valor3 === 1 ? window.location.reload() : null}

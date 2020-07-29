@@ -1,11 +1,12 @@
 import React from 'react';
 import { getType } from '../../img/images';
 import { connect } from 'react-redux';
+import images from '../../img/images';
 
 
-const testPokemon = {
-  type: 'asd',
-}
+// const images = {
+//   type: 'asd',
+// }
 
 const Card = (props) => {
 
@@ -16,7 +17,7 @@ const Card = (props) => {
     <div className="card">
 
       {type1 === "bug" ? 
-        <div className="card__image-container" style={{ background: "var(--gradientBug)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientBug" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorBug" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorBug" }}>G{generation}</div>
@@ -28,49 +29,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorBug" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
 
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -88,19 +89,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorBug)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorBug", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorBug)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorBug", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "dark" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientDark)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientDark" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorDark" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorDark" }}>G{generation}</div>
@@ -112,49 +113,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorDark" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
 
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -172,19 +173,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorDark)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorDark", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorDark)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorDark", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "dragon" ? 
 
-        <div className="card__image-container" style={{ background: "var(--gradientDragon)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientDragon" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorDragon" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorDragon" }}>G{generation}</div>
@@ -196,49 +197,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorDragon" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -256,19 +257,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorDragon)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorDragon", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorDragon)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorDragon", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "electric" ? 
         
-        <div className="card__image-container" style={{ background: "var(--gradientElectric)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientElectric" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorElectric" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorElectric" }}>G{generation}</div>
@@ -280,49 +281,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorElectric" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -340,19 +341,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorElectric)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorElectric", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorElectric)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorElectric", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "fairy" ? 
 
-        <div className="card__image-container" style={{ background: "var(--gradientFairy)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientFairy" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorFairy" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorFairy" }}>G{generation}</div>
@@ -364,49 +365,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorFairy" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -424,13 +425,13 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorFairy)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorFairy", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorFairy)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorFairy", width: sp_defense }}></div>
               </div>
             </div>
           </div>
@@ -449,48 +450,48 @@ const Card = (props) => {
             <div className="card__type">
             <div className="card__type1" >
               <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -520,7 +521,7 @@ const Card = (props) => {
           </div>
         </div> : type1 === "fire" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientFire)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientFire" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorFire" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorFire" }}>G{generation}</div>
@@ -532,49 +533,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorFire" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -592,19 +593,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorFire)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorFire", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorFire)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorFire", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "flying" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientFlying)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientFlying" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorFlying" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorFlying" }}>G{generation}</div>
@@ -616,49 +617,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorFlying" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -676,19 +677,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorFlying)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorFlying", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorFlying)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorFlying", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "ghost" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientGhost)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientGhost" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorGhost" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorGhost" }}>G{generation}</div>
@@ -700,49 +701,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorGhost" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -760,19 +761,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorGhost)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorGhost", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorGhost)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorGhost", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "grass" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientGrass)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientGrass" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorGrass" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorGrass" }}>G{generation}</div>
@@ -784,49 +785,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorGrass" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -844,19 +845,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorGrass)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorGrass", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorGrass)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorGrass", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "ground" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientGround)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientGround" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorGround" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorGround" }}>G{generation}</div>
@@ -868,49 +869,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorGround" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -928,19 +929,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorGround)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorGround", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorGround)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorGround", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "ice" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientIce)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientIce" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorIce" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorIce" }}>G{generation}</div>
@@ -952,49 +953,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorIce" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.type} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1012,19 +1013,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorIce)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorIce", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorIce)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorIce", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "normal" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientNormal)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientNormal" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorNormal" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorNormal" }}>G{generation}</div>
@@ -1036,49 +1037,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorNormal" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1096,19 +1097,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorNormal)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorNormal", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorNormal)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorNormal", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "poison" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientPoison)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientPoison" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorPoison" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorPoison" }}>G{generation}</div>
@@ -1120,49 +1121,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorPoison" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1180,19 +1181,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorPoison)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorPoison", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorPoison)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorPoison", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "psychic" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientPsychic)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientPsychic" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorPsychic" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorPsychic" }}>G{generation}</div>
@@ -1204,49 +1205,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorPsychic" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1264,19 +1265,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorPsychic)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorPsychic", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorPsychic)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorPsychic", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "rock" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientRock)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientRock" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorRock" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorRock" }}>G{generation}</div>
@@ -1288,49 +1289,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorRock" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1348,19 +1349,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorRock)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorRock", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorRock)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorRock", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : type1 === "steel" ?
 
-        <div className="card__image-container" style={{ background: "var(--gradientSteel)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientSteel" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorSteel" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorSteel" }}>G{generation}</div>
@@ -1372,49 +1373,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorSteel" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1432,19 +1433,19 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorSteel)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorSteel", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorSteel)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorSteel", width: sp_defense }}></div>
               </div>
             </div>
           </div>
         </div> : 
         
-        <div className="card__image-container" style={{ background: "var(--gradientWater)" }}>
+        <div className="card__image-container" style={{ background: "var(--gradientWater" }}>
           <div className="card__number-gen">
           <div className="card__number" style={{ color: "var(--colorWater" }}>{id}</div>
           <div className="card__gen" style={{ color: "var(--colorWater" }}>G{generation}</div>
@@ -1456,49 +1457,49 @@ const Card = (props) => {
             <h2 style={{ color: "var(--colorWater" }} >{name_pokemon}</h2>
             <div className="card__type">
             <div className="card__type1" >
-              <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
               <span>{type1}</span>
             </div>
             <div className="card__type2" >
               
-              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+              {type2 ? type2 === "bug" ? <div className="card__type-icon" style={{ background: "var(--gradientBug" }}>
+                <img src={images.bug} alt="type" />
+              </div> : type2 === "dark" ? <div className="card__type-icon" style={{ background: "var(--gradientDark" }}>
+                <img src={images.dark} alt="type" />
+              </div> : type2 === "dragon" ? <div className="card__type-icon" style={{ background: "var(--gradientDragon" }}>
+                <img src={images.dragon} alt="type" />
+              </div> : type2 === "electric" ? <div className="card__type-icon" style={{ background: "var(--gradientElectric" }}>
+                <img src={images.electric} alt="type" />
+              </div> : type2 === "fairy" ? <div className="card__type-icon" style={{ background: "var(--gradientFairy" }}>
+                <img src={images.fairy} alt="type" />
               </div> : type2 === "fighting" ? <div className="card__type-icon" style={{ background: "var(--gradientFight)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
-              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater)" }}>
-                <img src={getType(testPokemon.type)} alt="type" />
+                <img src={images.fight} alt="type" />
+              </div> : type2 === "fire" ? <div className="card__type-icon" style={{ background: "var(--gradientFire" }}>
+                <img src={images.fire} alt="type" />
+              </div> : type2 === "flying" ? <div className="card__type-icon" style={{ background: "var(--gradientFlying" }}>
+                <img src={images.flying} alt="type" />
+              </div> : type2 === "ghost" ? <div className="card__type-icon" style={{ background: "var(--gradientGhost" }}>
+                <img src={images.ghost} alt="type" />
+              </div> : type2 === "grass" ? <div className="card__type-icon" style={{ background: "var(--gradientGrass" }}>
+                <img src={images.grass} alt="type" />
+              </div> : type2 === "ground" ? <div className="card__type-icon" style={{ background: "var(--gradientGround" }}>
+                <img src={images.ground} alt="type" />
+              </div> : type2 === "ice" ? <div className="card__type-icon" style={{ background: "var(--gradientIce" }}>
+                <img src={images.ice} alt="type" />
+              </div> : type2 === "normal" ? <div className="card__type-icon" style={{ background: "var(--gradientNormal" }}>
+                <img src={images.normal} alt="type" />
+              </div> : type2 === "poison" ? <div className="card__type-icon" style={{ background: "var(--gradientPoison" }}>
+                <img src={images.poison} alt="type" />
+              </div> : type2 === "psychic" ? <div className="card__type-icon" style={{ background: "var(--gradientPsychic" }}>
+                <img src={images.psychic} alt="type" />
+              </div> : type2 === "rock" ? <div className="card__type-icon" style={{ background: "var(--gradientRock" }}>
+                <img src={images.rock} alt="type" />
+              </div> : type2 === "steel" ? <div className="card__type-icon" style={{ background: "var(--gradientSteel" }}>
+                <img src={images.steel} alt="type" />
+              </div> : <div className="card__type-icon" style={{ background: "var(--gradientWater" }}>
+                <img src={images.water} alt="type" />
               </div>
             : "" }
 
@@ -1516,13 +1517,13 @@ const Card = (props) => {
             <div className="card__progress">
               <span className="label">ATK</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorWater)", width: sp_attack }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorWater", width: sp_attack }}></div>
               </div>
             </div>
             <div className="card__progress">
               <span className="label">DEF</span>
               <div className="poke-progress" style={{ backgroundColor: "var(--grayGeneral)" }}>
-                <div className="progress" style={{ backgroundColor: "var(--colorWater)", width: sp_defense }}></div>
+                <div className="progress" style={{ backgroundColor: "var(--colorWater", width: sp_defense }}></div>
               </div>
             </div>
           </div>

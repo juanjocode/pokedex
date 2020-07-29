@@ -1,16 +1,13 @@
 import React from 'react';
 import PokeSeeker from '../PokeFind/PokeSeeker';
-import SliderAttack from '../SliderAttack/SliderAttack';
-import SliderDefense from '../SliderDefense/SliderDefense';
 import PokeButton from '../Button/Button';
 import PokeFilter from '../Filter/Filter';
-
 import iconStrong from '../../img/icon-strongest.svg'
 import iconWeakness from '../../img/icon-weakness.svg'
 import iconLegendary from '../../img/icon-legendary.svg'
 import iconReset from '../../img/icon-reset.svg'
 import iconCollapse from '../../img/icon-collapse.svg'
-import SliderProbabilidadLegendario from '../SliderProbabilidadLegendario/SliderProbabilidadLegendario';
+
 
 
 const Menu = (props) => {
@@ -32,7 +29,7 @@ const Menu = (props) => {
         <div className="menu__content">
 
           <PokeSeeker onChange={props.onChange} handleClick={expandMenu} tooltip="Search pokémon" />
-          <PokeFilter />
+          <PokeFilter handleIconBug={props.handleIconBug} handleIconDark={props.handleIconDark} handleIconDragon={props.handleIconDragon} handleIconElectric={props.handleIconElectric} handleIconFairy={props.handleIconFairy} handleIconFight={props.handleIconFight} handleIconFire={props.handleIconFire} handleIconFlying={props.handleIconFlying} handleIconGhost={props.handleIconGhost} handleIconGrass={props.handleIconGrass} handleIconGround={props.handleIconGround} handleIconIce={props.handleIconIce} handleIconNormal={props.handleIconNormal} handleIconPoison={props.handleIconPoison} handleIconPsychic={props.handleIconPsychic} handleIconRock={props.handleIconRock} handleIconSteel={props.handleIconSteel} handleIconWater={props.handleIconWater} handleData={props.handleData} handleChangeDefense={props.handleChangeDefense} handleChangeProb={props.handleChangeProb}/>
 
           <PokeButton
             icon={iconStrong}
@@ -65,9 +62,7 @@ const Menu = (props) => {
             onClick={() => props.onChange("")}
           />
           {/* {console.log(props.handleData, "Menu")} */}
-          <SliderAttack handleData={props.handleData}/>
-          <SliderDefense handleChangeDefense={props.handleChangeDefense}/>
-          <SliderProbabilidadLegendario handleChangeProb={props.handleChangeProb}/>
+          
           
         </div>
 
@@ -78,7 +73,7 @@ const Menu = (props) => {
           className="button-collapse"
           classNameContainer="button-collapse__container"
           onClick={collapseMenu}
-          // link="/index/cards"
+          link="/index/cards"
         />
       </div>
 
