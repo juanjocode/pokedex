@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import FilterDefense from '../components/FilterDefense/FilterDefense';
 import FilterProbLegend from '../components/FilterProbLegend/FilterProbLegend';
 import FilterByType from '../components/FilterByType/FilterByType';
+import { setPokemons } from '../Action/PokemonAction';
 // import { Provider } from 'react-redux';
 // import store from '../Store/store';
 // import { createStore } from 'redux';
@@ -93,6 +94,8 @@ class PokeCards extends React.Component {
   };
 
   handleChangeDefense = (e, f) => {
+    this.props.setPokemons(this.props.initialPokeSlider)
+
     this.setState({
       valorDefense: e,
       valorDefense2: f
@@ -100,6 +103,7 @@ class PokeCards extends React.Component {
   };
 
   handleData = (e, f) => {
+    this.props.setPokemons(this.props.initialPokeSlider)
     this.setState({
       valor2: e,
       valor5: f
@@ -113,12 +117,14 @@ class PokeCards extends React.Component {
   };
 
   handleChangeProb = (e) => {
+    this.props.setPokemons(this.props.initialPokeSlider)
     this.setState({
       valor4: e 
     });
   };
 
   handleStrong = (e) => {
+    this.props.setPokemons(this.props.initialPokeSlider)
     this.setState({
       valorStrong: e 
     });
@@ -318,6 +324,6 @@ const mapStateToProps = state => ({
   initialPokeSlider: state.pokemon
 }) 
 
-const mapDispatchToProps = dispatch => ({})
+const mapDispatchToProps = { setPokemons } 
 
 export default connect(mapStateToProps, mapDispatchToProps) (PokeCards);

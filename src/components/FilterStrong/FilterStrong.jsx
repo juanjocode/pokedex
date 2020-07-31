@@ -13,7 +13,7 @@ class FilterStrong extends React.Component {
           justify="center"
           alignItems="center"
         >
-        {this.props.initialPokeSlider.filter(pokemon => pokemon.fuerza_IV > 37).map(filteredPokemon => (
+        {this.props.initialPokeSlider.filter(pokemon => pokemon.fuerza_IV > 28).map(filteredPokemon => (
           <React.Fragment key={filteredPokemon.id}>
             <Card id={filteredPokemon.id} generation={filteredPokemon.generation} name_pokemon={filteredPokemon.name_pokemon} type1={filteredPokemon.type1} type2={filteredPokemon.type2} abilities={filteredPokemon.abilities} experience_growt={filteredPokemon.experience_growt} sp_attack={filteredPokemon.sp_attack} sp_defense={filteredPokemon.sp_defense}/>
           </React.Fragment> 

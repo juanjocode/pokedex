@@ -5,25 +5,33 @@ export const getPokemon = (data) => (dispatch) => {
   })
 }
 
-export const getAttack = () => (dispatch) => {
-  dispatch({
-    type: "SET_ATTACK",
-    payload: []
-  })
-}
-
 export const setPokemons = (dataPokemons) => (dispatch) => {
   dispatch({
     type: "SET_POKEMONS",
-    payload: [dataPokemons]
+    payload: dataPokemons
   })
 }
 
-export const getFilter = () => (dispatch) => {
+export const EmptyPokemons = () => (dispatch) => {
   dispatch({
-    type: "SET_FILTER",
+    type: "EMPTY_POKEMONS",
     payload: []
   })
+}
+
+// export const getAttack = () => (dispatch) => {
+//   dispatch({
+//     type: "SET_ATTACK",
+//     payload: []
+//   })
+// }
+
+
+// export const getFilter = () => (dispatch) => {
+//   dispatch({
+//     type: "SET_FILTER",
+//     payload: []
+//   })
 
 
 
@@ -42,6 +50,3 @@ export const getFilter = () => (dispatch) => {
 //     payload: data
 //   })
 // }
-
-
-}

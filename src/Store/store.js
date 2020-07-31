@@ -3,7 +3,6 @@ import ReduxThunk from 'redux-thunk';
 
 const initialState = {
   pokemon: [], 
-  pokeStrongest: [],
   currentPokemons: []
 }
 
@@ -15,24 +14,24 @@ const reducerPokemon = (state = initialState, action) => {
       }
       break;
 
-      case "SET_ATTACK":
+      case "EMPTY_POKEMONS":
       return {
-        ...state, currentPokemons: [...action.payload]
+        ...state, currentPokemons: []
       }
       break;
 
       case "SET_POKEMONS":
+      // state.currentPokemons = [] 
       return {
         ...state, currentPokemons: [...action.payload]
       }
       break;
 
-
-    case "SET_FILTER":
-      return {
-        ...state, currentPokemons: [...action.payload]
-      }
-      break;
+    // case "SET_FILTER":
+    //   return {
+    //     ...state, currentPokemons: [...action.payload]
+    //   }
+    //   break;
 
     // case "SET_STRONGEST":
     //   return {

@@ -7,6 +7,8 @@ import iconWeakness from '../../img/icon-weakness.svg'
 import iconLegendary from '../../img/icon-legendary.svg'
 import iconReset from '../../img/icon-reset.svg'
 import iconCollapse from '../../img/icon-collapse.svg'
+import { EmptyPokemons } from '../../Action/PokemonAction';
+import { connect } from 'react-redux';
 
 
 
@@ -20,6 +22,8 @@ const Menu = (props) => {
     var menuToggle = document.querySelector('.menu');
     menuToggle.classList.remove("collapse")
   };
+
+  
 
   return (
 
@@ -59,10 +63,9 @@ const Menu = (props) => {
             tooltip="Reset / All"
             link="/index/cards"
             style={{ width: "100%" }}
-            onClick={() => props.onChange("")}
+            onClick={() => props.EmptyPokemons()}
+            // onClick={() => props.onChange("")}
           />
-          {/* {console.log(props.handleData, "Menu")} */}
-          
           
         </div>
 
@@ -84,4 +87,9 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+
+const mapDispatchToProps = { EmptyPokemons }
+
+export default connect(null , mapDispatchToProps)(Menu);
+
+// export default Menu;

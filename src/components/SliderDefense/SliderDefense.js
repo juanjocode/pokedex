@@ -29,6 +29,8 @@ const SliderDefense = (props) => {
   
   const handleChangeDefense = (event, newValue) => {
     setValueDefense(newValue);
+    
+    // console.log("Hola")
   };
 
   // const [state, setState] = React.useState({

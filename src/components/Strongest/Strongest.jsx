@@ -18,7 +18,7 @@ const Strongest = (props) => {
 
     const getApi = async () => {
       try {
-        const data = await fetch ('http://localhost:3000/pokemon')
+        const data = await fetch ('https://protected-castle-45403.herokuapp.com/pokemon/?format=json')
         const resp = await data.json();
         console.log(resp);
         props.getStrongest(resp)
