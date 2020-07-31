@@ -63,7 +63,7 @@
     width: 100%;
 }
 .pokefilter button:hover{
-   cursor: pointer;
+//    cursor: pointer;
 }
 
 .pokefilter__checks-continer{
@@ -72,4 +72,15 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 14px;
     
+}
+
+.pokefilter__title-types {
+    width: 100%;
+    display: block;
+    text-align: initial;
+    margin: 10px 0 20px;
+}
+.MuiAccordionSummary-root.Mui-expanded {
+    min-height: 48px !important;
+    border-bottom: 1px solid var(--primary);
 }

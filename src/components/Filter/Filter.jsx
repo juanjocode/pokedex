@@ -324,7 +324,7 @@ const PokeFilter = (props) => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <div className="pokefilter__content">
-                            <span>By type</span>
+                            <span className="pokefilter__title-types">By type</span>
 
                             <div className="pokefilter__checks-continer">
 
