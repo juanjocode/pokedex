@@ -1,10 +1,5 @@
 @import './variables.scss';
 
-// $primary: #FFCB05;
-// $secondary: #3567B0;
-// $textGeneral: #B1B1B1;
-// $white: #FFFFFF;
-
 @mixin font-small{
   font-size: 11px;
   color:$textGeneral;
@@ -20,11 +15,9 @@
 
 
 .card {
-  // border: 1px solid red;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.212);
-
   width: 200px;
-  height: 280px;
+  height: 310px;
   border-radius: 10px;
   overflow: hidden;
   margin: 7px;
@@ -66,8 +59,6 @@
   }
 }
 
-
-
 .card__type{
   display: flex;
   @include font-small;
@@ -99,17 +90,24 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 7px;
+  margin-top: 10px;
+  min-height: 40px;
   & .label{
     @include font-small-bold;  
   }
   & .abilitie{
     @include font-small;
-    margin-left: 10px;
-    max-width: 70px;  
+    display: flex;
+    align-items: center;
+    max-width: 180px;  
     text-overflow: ellipsis;
     overflow: hidden;
+    max-height: 40px;
+    min-height: auto;
+    overflow: auto;
   }
 }
 
@@ -136,7 +134,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  // flex-wrap: wrap;
   margin-top: 7px;
   & .label{
     @include font-small-bold;  
@@ -147,7 +144,6 @@
   }
   & .poke-progress{
     width:100%;
-    background-color: red;
     border-radius: 50px;
     margin-left: 10px;
     & .progress{

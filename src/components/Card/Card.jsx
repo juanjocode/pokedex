@@ -19,7 +19,7 @@ const Card = (props) => {
       {type1 === "bug" ? 
         <div className="card__image-container" style={{ background: "var(--gradientBug" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorBug" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorBug" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorBug" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -103,7 +103,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientDark" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorDark" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorDark" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorDark" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -187,7 +187,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientDragon" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorDragon" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorDragon" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorDragon" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -271,7 +271,7 @@ const Card = (props) => {
         
         <div className="card__image-container" style={{ background: "var(--gradientElectric" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorElectric" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorElectric" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorElectric" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -355,7 +355,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientFairy" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorFairy" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorFairy" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorFairy" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -439,7 +439,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientFight)" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorFight" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorFight" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorFight" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -523,7 +523,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientFire" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorFire" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorFire" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorFire" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -607,7 +607,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientFlying" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorFlying" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorFlying" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorFlying" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -691,7 +691,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientGhost" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorGhost" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorGhost" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorGhost" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -775,7 +775,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientGrass" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorGrass" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorGrass" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorGrass" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -859,7 +859,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientGround" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorGround" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorGround" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorGround" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -943,7 +943,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientIce" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorIce" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorIce" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorIce" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -1027,7 +1027,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientNormal" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorNormal" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorNormal" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorNormal" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -1111,7 +1111,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientPoison" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorPoison" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorPoison" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorPoison" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -1195,7 +1195,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientPsychic" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorPsychic" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorPsychic" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorPsychic" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -1279,7 +1279,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientRock" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorRock" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorRock" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorRock" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -1363,7 +1363,7 @@ const Card = (props) => {
 
         <div className="card__image-container" style={{ background: "var(--gradientSteel" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorSteel" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorSteel" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorSteel" }}>G{generation}</div>
         </div>
           <div className="poke-image">
@@ -1447,7 +1447,7 @@ const Card = (props) => {
         
         <div className="card__image-container" style={{ background: "var(--gradientWater" }}>
           <div className="card__number-gen">
-          <div className="card__number" style={{ color: "var(--colorWater" }}>{id}</div>
+          <div className="card__number" style={{ color: "var(--colorWater" }}>{`#${id}`}</div>
           <div className="card__gen" style={{ color: "var(--colorWater" }}>G{generation}</div>
         </div>
           <div className="poke-image">
