@@ -15,7 +15,7 @@ import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
   root: {
-    width: 56,
+    width: "100%",
   },
 });
 
@@ -58,7 +58,7 @@ const SliderAttack = (props) => {
 
   return (
     <Box display="flex" className={classes.root}>
-      <div >
+      <div className="filter__checks-group" >
         <FormControlLabel className="Checkbox"
           control={
             <Checkbox 
@@ -70,7 +70,7 @@ const SliderAttack = (props) => {
           }
         />
       </div>
-      <div className="attack">
+      <div className="filter__slider">
         <Typography id="range-slider" gutterBottom style={{ color: "var(--textGeneral)" }}>
           Attack 
         </Typography>

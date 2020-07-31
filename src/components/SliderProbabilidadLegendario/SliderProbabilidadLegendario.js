@@ -32,19 +32,19 @@ const SliderProbabilidadLegendario = (props) => {
 
   return (
     <Box display="flex">
-      <div>
+      <div className="filter__slider filter__slider--row ">
         <FormControlLabel className="Checkbox"
           control={
-            <Checkbox 
-              checked={stateCheck.checkedA} 
-              onChange={handleChangeCheck} 
-              name="checkedA" 
-              onClick={() => props.handleChangeProb(stateCheck.checkedA) }
+            <Checkbox
+              checked={stateCheck.checkedA}
+              onChange={handleChangeCheck}
+              name="checkedA"
+              onClick={() => props.handleChangeProb(stateCheck.checkedA)}
             />
           }
         />
-      </div>
-      <p style={{ color: "var(--textGeneral)" }}>Prob.<br/>Legend</p> 
+
+        <p style={{ color: "var(--textGeneral)" }}>Prob.Legend</p>
         {/* <Switch
           checked={state.checkedB}
           onChange={handleChangeProb}
@@ -53,7 +53,8 @@ const SliderProbabilidadLegendario = (props) => {
           inputProps={{ 'aria-label': 'primary checkbox' }}
           onClick={() => props.handleChangeProb(state.checkedB) } 
         /> */}
-      
+      </div>
+
     </Box>
   );
 }

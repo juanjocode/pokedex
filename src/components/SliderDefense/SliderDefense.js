@@ -13,7 +13,7 @@ import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
   root: {
-    width: 56,
+    width: "100%",
   },
 });
 
@@ -67,7 +67,7 @@ const SliderDefense = (props) => {
           }
         />
       </div>
-      <div>
+      <div className="filter__slider">
         <Typography id="range-slider" gutterBottom style={{ color: "var(--textGeneral)" }}>
           Defense
         </Typography>
