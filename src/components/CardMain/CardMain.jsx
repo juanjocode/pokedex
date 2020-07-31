@@ -4,7 +4,7 @@ import { getType } from '../../img/images';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
 import { getPokemon, setPokemons } from '../../Action/PokemonAction';
-import Grid from '@material-ui/core/Grid';
+
 
 
 const CardMain = (props) => {
@@ -45,13 +45,8 @@ const CardMain = (props) => {
 
   return (
 
-    <div >    
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-        >
+    <div className="cards__container">    
+     
         {/* {console.log(props.currentPokemon.length)} */}
         {/* {props.currentPokemons.length === 0 && ""}
           {props.currentPokemons.map(filteredPokemon => (
@@ -67,8 +62,7 @@ const CardMain = (props) => {
           </React.Fragment>
         ))}
 
-      </Grid>
-        
+     
     </div>
   )
 }

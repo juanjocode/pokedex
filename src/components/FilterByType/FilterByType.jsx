@@ -1,20 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
-import Grid from '@material-ui/core/Grid';
+
 
 
 const FilterByType = (props) => {
 
   return (
-    <div>
-      <Grid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-      >
-
+    <div className="cards__container">
 {/* handleIconBug handleIconDark handleIconDragon handleIconElectric handleIconFairy handleIconFight handleIconFire handleIconFlying handleIconGhost handleIconGrass handleIconGround handleIconIce handleIconNormal handleIconPoison handleIconPsychic handleIconRock handleIconSteel handleIconWater */}
 
       {props.handleIconBug === undefined ? "" : props.handleIconBug === true ? props.initialFilterByType.filter(pokemon => pokemon.type1 === "bug").map(filteredPokemon => (
@@ -108,7 +101,6 @@ const FilterByType = (props) => {
         </React.Fragment> 
       )) : "" }
       {/* {props.handleData2 === "" ? "" : } */}
-      </Grid>
     </div> 
   )
 }

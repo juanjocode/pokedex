@@ -1,18 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
-import Grid from '@material-ui/core/Grid';
+
 
 class FilterLegendaries extends React.Component {
   render() {
     return (
-      <div>
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-        >
+      <div className="cards__container">
+
         {this.props.initialPokeSlider.filter(pokemon => pokemon.is_legendary === 1).map(filteredPokemon => (
           <React.Fragment key={filteredPokemon.id}>
             <Card id={filteredPokemon.id} generation={filteredPokemon.generation} name_pokemon={filteredPokemon.name_pokemon} type1={filteredPokemon.type1} type2={filteredPokemon.type2} abilities={filteredPokemon.abilities} experience_growt={filteredPokemon.experience_growt} sp_attack={filteredPokemon.sp_attack} sp_defense={filteredPokemon.sp_defense}/>
@@ -27,7 +22,6 @@ class FilterLegendaries extends React.Component {
           </React.Fragment> 
         ))} */}
 
-        </Grid>
       </div> 
     )
   }

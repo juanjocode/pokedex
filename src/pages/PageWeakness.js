@@ -78,7 +78,7 @@ class PageWeakness extends React.Component {
         <Navbar />
         <div className="content">
           <Menu onChange={this.handleChange} handleStrong={this.handleStrong} handleData={this.handleData} handleChangeDefense={this.handleChangeDefense} handleReset={this.handleReset} handleChangeProb={this.handleChangeProb}/>
-          <div className="cards__container">
+          <div className="cards__container-main">
 
           {this.state.valor3 === 1 ? window.location.reload() : null}
 
