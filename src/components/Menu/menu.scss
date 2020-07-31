@@ -19,7 +19,9 @@
 
     & .button-collapse__container {
         position: absolute;
+        width: 100%;
         bottom: 10px;
+        box-shadow: 0px -2px 3px 0px #00000040;
     }
     & .button-collapse {
         bottom: 10px;

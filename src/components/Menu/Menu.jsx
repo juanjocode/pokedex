@@ -72,11 +72,10 @@ const Menu = (props) => {
         <PokeButton
           icon={iconCollapse}
           title="Collapse"
-          tooltip="Collapse"
           className="button-collapse"
           classNameContainer="button-collapse__container"
           onClick={collapseMenu}
-          link="/index/cards"
+          // link="/index/cards"
         />
       </div>
 
